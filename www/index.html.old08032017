@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!-- Pourquoi vous regardez mon code source ? -->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon"><img src="images/pastille.png" alt="PSES2017" height="100%" width="100%" /></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+							<img src="images/banner.png" alt="PSES2017" height="100%" width="100%" />
+								<p>Faites preuve de curiosité<br /> 
+								rejoignez-nous<br />
+								<p id="countdown" style="font-size:20px"></p>
+							</div>
+						</div>
+						<div>
+						<nav>
+							<ul>
+								<!--<li><a href="#Accueil">Accueil</a></li>-->
+								<li><a href="#CallForHack">Call For Hack</a></li>
+								<li><a href="#Programme">Programme</a></li>
+								<li><a href="#Info">Infos</a></li>
+								<li><a href="#Outils">Outils</a></li>
+								<li><a href="#Assopage">Association</a></li>
+							</ul>
+						</nav>
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Accueil -->
+							<article id="Accueil">
+								<h2 class="major">Accueil PSES</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+							</article>
+						<!-- CFH -->
+							<article id="CallForHack">
+								<h2 class="major">Call For Hack</h2>
+								<p>Vous désirez présenter quelque chose pour PSES ?</p>
+								<p>Avez-vous pensé à lire la page du wiki à ce sujet ?</p>
+								<form method="post" action="#">
+									<div class="field half first">
+										<label for="name">Nom/Pseudonyme</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Résumé</label>
+										<textarea name="message" id="message" rows="2"></textarea>
+									</div>
+									<div class="field">
+										<label for="message">Descriptif complet</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+						<!-- Programme asso -->
+							<article id="Programme">
+								<h2 class="major">Programme</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p>Le programme est actuellement en cours de préparation et sera finalisé le 15 Mai.</p>
+								<p>Pour être sur de ne rien manquer, vous pouvez nous suivre sur Twitter ou vous abonner à la liste de diffusion.</p>
+								<p>Lien Twitter & lien ml, à trés bientôt. :)</p>
+							</article>
+
+						<!-- Informations -->
+							<article id="Info">
+								<h2 class="major">Informations</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Ici résumé rapide des informations éssentielles : adresse, station de RER, un plan rapide depuis la gare RER et un lien vers une page plus détaillée du wiki.</p>
+							</article>
+						<!-- Outils -->
+							<article id="Outils">
+								<h2 class="major">Outils</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Les liens vers les outils pour aider.</p>
+							</article>
+						<!-- Assopage -->
+							<article id="Assopage">
+								<h2 class="major">L'association</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Blablabla toi même tu sais</p>
+							</article>
+							<article id="mentions">
+								<h2 class="major">Mentions légales</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p>C'est du latin ça changera pas de d'habitude, personne lit ça</p>
+								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							</article>	
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					<ul class="icons">
+									<li><a href="https://twitter.com/passageenseine" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-map-marker"><span class="label">Localisation</span></a></li>
+									<li><a href="https://creativecommons.org/licenses/by-nc/3.0/fr/#" class="icon fa-creative-commons"><span class="label">BY-NC</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+						<p class="copyright">PSES 2017</p>
+						<p class="copyright"><a href="#mentions" ><span class="label">Mentions légales</span></a>
+						<p class="copyright"><a href="56k.html" ><span class="label">Bas débit</span></a>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 29, 2017 08:0:0").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = days + "j " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("countdown").innerHTML = "PSES 2017 est en cours. :)";
+    }
+}, 1000);
+</script>
+
+	</body>
+</html>
