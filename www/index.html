@@ -57,7 +57,7 @@
 								<h2 class="major">Call For Hack</h2>
 								<p align="justify">Bienvenue ! Welcome ! Bonvenon ! <br /><br />
 									Nous vous invitons à participer à PSES2017 en accueillant vos propositions : <br />
-									ateliers et	conférences bien sûr, mais aussi installations, performances, discussions et autres formes 
+									ateliers et	conférences bien sûr, mais aussi installations, performances, discussions et autres formes
 									d'interventions pratiques, artistiques ou associatives.
 									Des thèmes sont proposés, pas imposés, pour laisser place à la manifestation d'idées
 									originales.
@@ -122,7 +122,7 @@
 								<p>Ici résumé rapide des informations éssentielles : adresse, station de RER, un plan rapide depuis la gare RER et un lien vers une page plus détaillée du wiki.</p>
 								<ul class="icons">
 									<li><a target="_blank" href="#" class="icon fa-map-marker"><span class="label">Localisation</span></a></li>
-								</ul>								
+								</ul>
 							</article>
 						<!-- Outils -->
 							<article id="Outils">
@@ -133,9 +133,9 @@
 									<li><a target="_blank" href="http://git.passageenseine.fr" class="icon fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 								</article>
-								
-								
-								
+
+
+
 						<!-- Assopage -->
 							<article id="Assopage">
 								<h2 class="major">L'association</h2>
@@ -149,7 +149,7 @@
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
-							
+
 							<!-- Archive -->
 							<article id="Archive">
 								<h2 class="major">Archives et vidéos</h2>
@@ -166,7 +166,7 @@
 
 
 
-							
+
 					</div>
 
 				<!-- Footer -->
@@ -212,21 +212,21 @@ var countdownfunction = setInterval(function() {
 
     // Get todays date and time
     var now = new Date().getTime();
-    
+
     // Find the distance between now an the count down date
     var distance = countDownDate - now;
-    
+
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
+
     // Output the result in an element with id="demo"
     document.getElementById("countdown").innerHTML = days + "j " + hours + "h "
     + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
+
+    // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(countdownfunction);
         document.getElementById("countdown").innerHTML = "PSES 2017 est en cours. :)";
