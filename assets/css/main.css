@@ -1269,7 +1269,7 @@
 			display: flex;
 			margin-bottom: auto;
 			list-style: none;
-			padding-left: auto;
+			padding-left:0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
 		}
@@ -1586,4 +1586,3 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
-
