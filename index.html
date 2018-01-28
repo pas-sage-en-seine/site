@@ -2,7 +2,7 @@
 <!-- Pourquoi vous regardez mon code source ? -->
 <html>
 	<head>
-		<title>#PSES2017</title>
+		<title>#PSES2018</title>
 		<link rel="shortcut icon" href="images/pastille.ico" type="favicon/ico" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -18,22 +18,22 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon"><img src="images/pastille.png" alt="PSES2017" height="100%" width="100%" /></span>
+							<span class="icon"><img src="images/pastille.png" alt="PSES2018" height="100%" width="100%" /></span>
 						</div>
 						<div class="content">
 							<div class="inner">
-							<img src="images/banner.png" alt="PSES2017" height="100%" width="100%" />
+							<img src="images/banner.png" alt="PSES2018" height="100%" width="100%" />
 								<p>Faites preuve de curiosité<br />
 								<p id="countdown" style="font-size:20px"></p>
-								<p>En Live ! <a href="https://live.passageenseine.fr/player1/">https://live.passageenseine.fr/player1/</a> <br />
+								<!-- <p>En Live ! <a href="https://live.passageenseine.fr/player1/">https://live.passageenseine.fr/player1/</a> <br /> -->
 							</div>
 						</div>
 						<div>
 						<nav>
 							<ul>
 								<!--li><a href="#CFH">Appel à conférence</a></li-->
-								<li><a href="/programme/">Programme</a></li>
-								<li><a href="#VillageAsso">Village Associatif</a></li>
+								<!-- <li><a href="/programme/">Programme</a></li> -->
+								<!-- <li><a href="#VillageAsso">Village Associatif</a></li> -->
 								<li><a href="#Info">Infos</a></li>
 								<li><a href="#CodeConduite">Code de conduite</a></li>
 								<li><a href="#Outils">Outils</a></li>
@@ -52,14 +52,14 @@
 						<article id="Accueil">
 							<h2 class="major">Accueil PSES</h2>
 							<span class="image main"><img src="images/pastille.ico" alt="" /></span>
-							<p>Pas Sage en Seine 2017</p>
+							<p>Pas Sage en Seine 2018</p>
 							<p>Resist with the Rabbit</p>
 							<p>DIY - Privacy - Internet - Sécurité - hacktivisme - etc...</p>
 						</article>
 						<!-- Appel à conférences -->
 						<!-- <article id="CFH">
 							<h2 class="major">Appel à conférence</h2>
-							<p>Les appels à participation ont lieu du 11 avril au 24 mai 2017.</p>
+							<p>Les appels à participation ont lieu du XX avril au XX mai 2018.</p>
 							<p>Pour nous transmettre un projet de conférence, rendez-vous sur notre <a href="https://cfh.passageenseine.fr">formulaire</a>.</p>
 							<p>À trés bientôt. :)</p>
 							<ul class="icons">
@@ -68,7 +68,7 @@
 						<!-- Programme asso -->
 							<!--article id="Programme">
 								<h2 class="major">Programme</h2>
-								<p>Les appels à participation ont lieu du 11 avril au 20 mai 2017. Le programme sera annoncé début juin.</p>
+								<p>Les appels à participation ont lieu du XX avril au XX mai 2018. Le programme sera annoncé début juin.</p>
 								<p>Pour être sur de ne rien manquer, vous pouvez nous suivre sur Twitter ou vous abonner à la liste de diffusion.</p>
 								<p>À trés bientôt. :)</p>
 								<ul class="icons">
@@ -194,7 +194,7 @@
 									<li>Repo git <a target="_blank" href="https://git.passageenseine.fr" class="icon fa-github"></a></li>
 								</ul>
 								<p>Mailing list : <a target="_blank" href="https://list.passageenseine.fr">https://list.passageenseine.fr</a></p>
-								<p>IRC : irc.freenode.net/6697 (SSL) chan :#PSES2017</p>
+								<p>IRC : irc.freenode.net/6697 (SSL) chan :#PSES2018</p>
 						</article>
 						<!-- Assopage -->
 							<article id="Assopage">
@@ -233,7 +233,11 @@
 							<!-- Archive -->
 							<article id="Archive">
 								<h2 class="major">Archives et vidéos</h2>
-								<p>Archives et Vidéos <a target="_blank" href="http://data.passageenseine.org/">http://data.passageenseine.org/</a></p>
+								<p>Archives et Vidéos</p>
+								<ul>
+									<li>Jusqu'à 2016 : <a target="_blank" href="http://data.passageenseine.org/">https://data.passageenseine.org/</a></p></li>
+									<li>Edition 2017 : <a target="_blank" href="https://archives.passageenseine.fr/">https://archives.passageenseine.fr/</a></p></li>
+								</ul>
 							</article>
 					</div>
 
@@ -254,7 +258,7 @@
 							<span><a target="_blank" href="https://www.mediapart.fr"><img alt="mediapart" src="images/mediapart.png" height="35" /></a></span>
 					</article>
 
-					<p class="copyright">PSES 2017</p>
+					<p class="copyright">PSES 2018</p>
 					<p class="copyright"><a href="#mentions" ><span class="label">Mentions légales</span></a>
 					<p class="copyright"><a href="56k.html" ><span class="label">Bas débit</span></a>
 					</footer>
@@ -270,8 +274,9 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
+document.getElementById("countdown").innerHTML = "PSES 2018 est en cours de préparation. :)";
 // Set the date we're counting down to
-var countDownDate = new Date("Jun 29, 2017 10:0:0").getTime();
+/*var countDownDate = new Date("Jun XX, 2018 10:0:0").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -295,9 +300,9 @@ var countdownfunction = setInterval(function() {
     // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(countdownfunction);
-        document.getElementById("countdown").innerHTML = "PSES 2017 est en cours. :)";
+        document.getElementById("countdown").innerHTML = "PSES 2018 est en cours. :)";
     }
-}, 1000);
+}, 1000);*/
 </script>
 
 	</body>
