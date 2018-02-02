@@ -36,9 +36,9 @@
 								<!--li><a href="#CFH">Appel à conférence</a></li-->
 								<li><a href="#programme">Programme</a></li>
 								<!-- <li><a href="#VillageAsso">Village Associatif</a></li> -->
-								<li><a href="#Info">Infos</a></li>
-								<li><a href="#CodeConduite">Code de conduite</a></li>
-								<li><a href="#Outils">Outils</a></li>
+								<!-- <li><a href="#Info">Infos</a></li> -->
+								<!-- <li><a href="#CodeConduite">Code de conduite</a></li> -->
+								<!-- <li><a href="#Outils">Outils</a></li> -->
 								<li><a href="#Assopage">Association</a></li>
 								<li><a href="#Archive">Archives & Vidéos</a></li>
 
@@ -70,13 +70,27 @@
 						<!-- Programme asso -->
 							<article id="programme">
 								<h2 class="major">Programme</h2>
-								<p>Vous pouvez retrouver le programme de l'édition 2017 ici : <a href="https://passageenseine.fr/programme/">https://passageenseine.fr/programme/</a></p>
-								<p>Les appels à participation, pour l'édition 2018 auron lieu du 1 au 31 mars 2018. Le programme sera annoncé début juin.</p>
+								<p>Vous pouvez retrouver le programme de l'édition 2017 ici : <a href="https://passageenseine.fr/programme/">https://passageenseine.fr/programme/</a></p>
+								<p>Les appels à participation, pour l'édition 2018 auron lieu du 01 au 31 mars 2018. Le programme sera annoncé début mai.</p>
 								<p>Pour être sûr de ne rien manquer, vous pouvez nous suivre sur Twitter ou vous abonner à la liste de diffusion.</p>
 								<p>À trés bientôt. :)</p>
 								<ul class="icons">
-									<li>Twitter <a target="_blank" href="https://twitter.com/passageenseine" class="icon fa-twitter"></a></li>
-									<li>Mailing list <a target="_blank" href="mailto:discussion@passageenseine.fr" class="icon fa-envelope"></a></li>
+									<li>
+										Twitter
+										<a target="_blank" href="https://twitter.com/passageenseine">
+											<img alt="twitter" src="images/twitter.png" height="30" />
+										</a>
+									</li>
+									<li>
+										Mastodon
+										<a target="_blank" href="https://ecurie.social/@PasSageEnSeine">
+											<img alt="mastodon" src="images/mastodon-white.png" height="30" />
+										</a>
+									</li>
+									<li>
+										Mailing list
+										<a target="_blank" href="mailto:discussion@passageenseine.fr" class="icon fa-envelope"></a>
+									</li>
 								</ul>
 							</article>
 
@@ -279,7 +293,7 @@
 			<script>
 //document.getElementById("countdown").innerHTML = "PSES 2018 est en cours de préparation. :)";
 // Set the date we're counting down to
-var countDownDate = new Date("Apr 30, 2018 13:37:0").getTime();
+var countDownDate = new Date("Apr 30, 2018 13:37:42").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -288,13 +302,15 @@ var countdownfunction = setInterval(function() {
     var now = new Date().getTime();
 
     // Find the distance between now an the count down date
-    var distance = countDownDate - now;
+    var distance = Math.floor((countDownDate - now)/1000);
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	var seconds = distance % 60;
+	distance = (distance - seconds) / 60;
+	var minutes = distance % 60;
+	distance = (distance - minutes) / 60;
+	var hours = distance % 24;
+	distance = (distance - hours) / 24;
+	var days = distance;
 
     // Output the result in an element with id="demo"
     document.getElementById("countdown").innerHTML = days + "j " + hours + "h "
