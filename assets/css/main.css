@@ -138,6 +138,10 @@
 		font-weight: 600;
 	}
 
+	img {
+		vertical-align: middle;
+	}
+
 	em, i {
 		font-style: italic;
 	}
