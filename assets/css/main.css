@@ -1567,6 +1567,14 @@
 		text-align: center;
 	}
 
+		#footer ul.icons a {
+			border-bottom: none;
+		}
+
+		#footer #partners a {
+			border-bottom: none;
+		}
+
 		#footer .copyright {
 			letter-spacing: 0.2rem;
 			font-size: 0.6rem;
