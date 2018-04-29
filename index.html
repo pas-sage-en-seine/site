@@ -20,11 +20,13 @@
 						</div>
 						<div class="content">
 							<div class="inner">
+							<h1 hidden>Festival Pas Sage En Seine</h1>
 							<img src="assets/images/banner.png" alt="PSES2018" height="85%" width="85%" />
 								<p>Faites preuve de curiosité<p>
 								<!-- <p>Fin de la campagne de dons dans : </p> -->
 								<p id="countdown" style="font-size:20px"></p>
 								<!-- <p>En Live ! <a href="https://live.passageenseine.fr/">https://live.passageenseine.fr/</a><br /> -->
+								<!-- <a href="https://live.passageenseine.fr"><button type="button">EN LIVE !</button></a> -->
 							</div>
 						</div>
 						<div>
@@ -33,7 +35,7 @@
 								<!-- <li><a href="https://donate.passageenseine.fr">Appel aux dons</a></li> -->
 								<!-- <li><a href="#CFH">Appel à conférence</a></li> -->
 								<li><a href="#programme">Programme</a></li>
-								<!-- <li><a href="#VillageAsso">Village Associatif</a></li> -->
+								<li><a href="#VillageAsso">Village Associatif</a></li>
 								<li><a href="#Info">Infos</a></li>
 								<li><a href="#CodeConduite">Code de conduite</a></li>
 								<li><a href="#Outils">Outils</a></li>
@@ -90,7 +92,15 @@
 								</li>
 							</ul>
 						</article>
-						<!-- Villgage associatif -->
+						<!-- Village associatif -->
+						<article id="VillageAsso">
+							<h2>Village Associatif</h2>
+							<p>L'appel pour le village associatif est maintenant ouvert,
+								votre association peut se proposer en envoyant un mail à l'adresse
+								<a href="mailto:contact@passageenseine.fr">contact@passageenseine.fr</a>
+							</p>
+						</article>
+						<!-- Village associatif -->
 						<!-- <article id="VillageAsso">
 							<h2 class="major">Village Associatif</h2>
 							<table>
@@ -271,6 +281,7 @@
 							<span><a target="_blank" href="https://bearstech.com"><img alt="bearstech" src="assets/images/bearstech.svg" height="35" /></a></span>
 							<span><a target="_blank" href="https://www.codeursenliberté.fr/"><img alt="codeurs en liberté" src="assets/images/codeurs-en-liberte.svg" height="35" /></a></span>
 							<span><a target="_blank" href="https://www.octopuce.fr"><img alt="octopuce" src="assets/images/octopuce.png" height="35" /></a></span>
+							<span><a target="_blank" href="https://www.la-rache.com"><img alt="La R.A.C.H.E" src="assets/images/larache.png" height="35" /></a></span>
 							<span><a target="_blank" href="https://www.choisyleroi.fr"><img alt="choisy" src="assets/images/choisy.jpg" height="35" /></a></span>
 							<span><a target="_blank" href="https://www.fdn.fr"><img alt="fdn" src="assets/images/FDN.svg" height="30" /></a></span>
 							<span><a target="_blank" href="https://www.mediapart.fr"><img alt="mediapart" src="assets/images/mediapart.png" height="35" /></a></span>
@@ -320,7 +331,7 @@ var countdownfunction = setInterval(function() {
     // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(countdownfunction);
-        document.getElementById("countdown").innerHTML = "PSES 2018 est en cours. :)";
+        document.getElementById("countdown").outerHTML = "PSES 2018 est en cours. :)";
     }
 }, 1000);
 </script>
