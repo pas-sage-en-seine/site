@@ -1,0 +1,7 @@
+<nav role="navigation">
+  <ul>
+    <% data.navigation.each do |item| %>
+      <li><a href="#<%= item.goto %>"><%= item.name %></a></li>
+    <% end %>
+  </ul>
+</nav>
