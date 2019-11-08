@@ -1,7 +1,12 @@
-<nav role="navigation">
-  <ul>
-    <% data.navigation.each do |item| %>
-      <li><a href="#<%= item.goto %>"><%= item.name %></a></li>
-    <% end %>
-  </ul>
+<nav class="navbar navbar-dark" role="navigation">
+  <a class="navbar-brand" href="/">PSES</a>
+  <div class="collapse navbar-collapse" id="liens">
+    <div class="navbar-nav">
+      <ul class="mr-auto">
+        <% data.navigation.each do |item| %>
+          <li><a href="#<%= item.goto %>"><%= item.name %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </nav>
