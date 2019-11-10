@@ -11,11 +11,14 @@
 	</head>
 	<body>
 		<header>
-			<%= partial "navigation" %>
+			<div class="w80 center autogrid">
+				<div class="brand">
+					<a class="" href="/">PSES</a>
+				</div>
+				<%= partial "navigation" %>
+			</div>
 		</header>
-		<section class="w80 center">
-			<%= yield %>
-		</<section>
+		<%= yield %>
 		<footer>
 			<%= partial "partenaires" %>
 		</footer>

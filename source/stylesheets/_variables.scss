@@ -1,5 +1,20 @@
 // Variables
 
 // textes
-$link-color: #5599FF;
-$link-color-hover: #AACCFF;
+$link-color: #3C9AAA;
+$link-color-hover: darken($link-color, 20);
+
+$txt-festival: #1D0029;
+$h1-festival: #1D0029;
+$txt-infos: #1C2A43;
+$h1-infos: #1C2A43;
+$txt-asso: #FFFFFF;
+$h1-asso: #FFFFFF;
+
+// fonds
+$bg-festival: #3C9AAA;
+$bg-infos: #DC803C;
+$bg-asso: #8C3484;
+
+// bordures
+$border-festival: black;

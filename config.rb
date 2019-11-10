@@ -7,7 +7,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 configure :development do
-  activate :livereload, apply_css_live: true, apply_js_live: true, no_swf: true
+  activate :livereload, host: 'localhost', apply_css_live: true, apply_js_live: true, no_swf: true
 end
 
 configure :build do
