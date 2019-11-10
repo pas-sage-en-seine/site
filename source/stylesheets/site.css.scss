@@ -16,10 +16,10 @@ header {
 	border-bottom: 2px solid #222;
 	font-size: 3rem;
 	a {
-		color: #f06;
+		color: $link-color-nav;
 		text-decoration: underline dashed;
 		&:hover, &:focus {
-			color: #ff80b2;
+			color: $link-color-hover-nav;
 			text-decoration: underline dashed;
 		}
 	}
@@ -58,12 +58,10 @@ nav[role="navigation"] label.menu {
 		right: .25em;
 		top: 0;
 		content: "\2261";
-		color: #fff;
-		font-size: 1.1em;
+		color: $txt-body;
 	}
 	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:after {
 		content: "\203A";
-		font-size: 1.1em;
 	}
 	nav[role="navigation"] input[type=checkbox].menu:checked ~ a {
 		display: inline-block;
@@ -80,7 +78,6 @@ section div.descriptions {
 
 	section {
 		flex: 1;
-		// margin: 0;
 		height: 100vh;
 		padding-top: 130px;
 	}
@@ -93,9 +90,6 @@ section#festival {
 		color: $h1-festival;
 		font-weight: bolder;
 	}
-	div.descriptions {
-		// border: 3px solid $border-festival;
-	}
 }
 
 section#infos {
@@ -105,9 +99,6 @@ section#infos {
 		color: $h1-infos;
 		font-weight: bolder;
 	}
-	div.descriptions {
-		// border: 3px solid $border-festival;
-	}
 }
 
 section#association {
@@ -116,8 +107,5 @@ section#association {
 	h1 {
 		color: $h1-asso;
 		font-weight: bolder;
-	}
-	div.descriptions {
-		// border: 3px solid $border-festival;
 	}
 }
