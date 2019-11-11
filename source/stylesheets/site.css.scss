@@ -36,6 +36,10 @@ header {
 	div.brand {
 		padding: 1rem;
 	}
+
+	nav {
+		padding: 1rem;
+	}
 }
 
 /* Navigation */
@@ -84,7 +88,7 @@ section div.descriptions {
 
 .content {
 	section {
-		height: 100vh;
+		min-height: 100vh;
 		padding-top: 130px;
 
 		&:nth-child(even) {
@@ -119,5 +123,15 @@ section div.descriptions {
 			border: 1px solid $bg;
 			border-radius: 1rem;
 		}
+	}
+}
+
+#association {
+	a .logo-contact {
+		text-decoration: none;
+	}
+	.logo-contact {
+		height: 60px;
+		max-width: 60px;
 	}
 }

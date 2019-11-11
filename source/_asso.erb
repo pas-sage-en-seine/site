@@ -1,32 +1,28 @@
 <section id="association" class="pal">
 	<div class="w80 center">
-		<h1 class="txtcenter">L’association</h1>
+          <h1 class="txtcenter">L’association</h1>
+          
+          <h2 class="txtcenter">Nous contacter</h2>
 
-		<div class="grid-3 has-gutter descriptions">
-			<div class="center">
-				<h2>Bloc 1</h2>
-				<p>Présentation du bloc</p>
-			</div>
-			<div class="center">
-				<h2>Bloc 2</h2>
-				<p>Présentation du bloc</p>
-			</div>
-			<div class="center">
-				<h2>Bloc 3</h2>
-				<p>Présentation du bloc</p>
-			</div>
-			<div class="center">
-				<h2>Bloc 4</h2>
-				<p>Présentation du bloc</p>
-			</div>
-			<div class="center">
-				<h2>Bloc 5</h2>
-				<p>Présentation du bloc</p>
-			</div>
-			<div class="center">
-				<h2>Bloc 6</h2>
-				<p>Présentation du bloc</p>
-			</div>
-		</div>
+          <div class="txtcenter">
+            <% link_to "https://mamot.fr/@passageenseine", title: 'Mastodon', alt: 'Logo Mastodon' do %>
+              <%= svg_image_tag 'logos.svg', 'mastodon', class: 'logo-contact' %>
+            <% end %>
+            <% link_to "https://mamot.fr/@passageenseine", title: 'Twitter', alt: 'Logo Twitter' do %>
+              <%= svg_image_tag 'logos.svg', 'twitter', class: 'logo-contact' %>
+            <% end %>
+          </div>
+
+          <h2 class="txtcenter">Nos partenaires</h2>
+
+          <div class="autogrid has-gutter txtcenter">
+            <% data.partenaires.each do |p| %>
+              <div>
+                <% link_to p.link, title: p.name, alt: p.name do %>
+                  <%= image_tag  p.logo %>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
 	</div>
 </section>
