@@ -14,3 +14,12 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
+
+helpers do
+  def svg_image_tag(image, id, *args, **kwargs)
+    path = image_path image
+    content_tag :svg, *args, **kwargs do
+      tag :use, 'xlink:href': "#{path}##{id}"
+    end
+  end
+end

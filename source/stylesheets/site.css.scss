@@ -2,6 +2,12 @@
 @import "KNACSS";
 
 body {
+	color: $text;
+	background-color: $bg;
+}
+
+h1 {
+	margin-bottom: 5rem;
 }
 
 header {
@@ -11,18 +17,22 @@ header {
 	top: 0;
 	width: 100%;
 
-	background: #111;
+	background: $text;
+	color: $bg;
 	border-top: 2px solid #222;
 	border-bottom: 2px solid #222;
 	font-size: 3rem;
+
 	a {
-		color: $link-color-nav;
+		color: $bg;
 		text-decoration: underline dashed;
+
 		&:hover, &:focus {
-			color: $link-color-hover-nav;
+			color: darken($bg, 20%);
 			text-decoration: underline dashed;
 		}
 	}
+
 	div.brand {
 		padding: 1rem;
 	}
@@ -34,6 +44,7 @@ nav[role="navigation"] input[type="checkbox"].menu {
 	top: -9999px;
 	left: -9999px;
 }
+
 nav[role="navigation"] label.menu {
 	display: none;
 	cursor: pointer;
@@ -58,7 +69,6 @@ nav[role="navigation"] label.menu {
 		right: .25em;
 		top: 0;
 		content: "\2261";
-		color: $txt-body;
 	}
 	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:after {
 		content: "\203A";
@@ -72,40 +82,42 @@ section div.descriptions {
 	border-radius: 2rem;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-
+.content {
 	section {
-		flex: 1;
 		height: 100vh;
 		padding-top: 130px;
+
+		&:nth-child(even) {
+			background-color: $text;
+			color: $bg;
+		}
 	}
 }
 
-section#festival {
-	background: $bg-festival;
-	color: $txt-festival;
-	h1 {
-		color: $h1-festival;
-		font-weight: bolder;
+#festival {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	> div {
+		flex: 0 1 auto;
+	}
+
+	.logo {
+		width: 300px;
+		border-radius: 300px;
+		background-color: $text;
 	}
 }
 
-section#infos {
-	background: $bg-infos;
-	color: $txt-infos;
-	h1 {
-		color: $h1-infos;
-		font-weight: bolder;
-	}
-}
+#infos {
+	div.descriptions {
+		margin-top: 3rem;
 
-section#association {
-	background: $bg-asso;
-	color: $txt-asso;
-	h1 {
-		color: $h1-asso;
-		font-weight: bolder;
+		div {
+			border: 1px solid $bg;
+			border-radius: 1rem;
+		}
 	}
 }
