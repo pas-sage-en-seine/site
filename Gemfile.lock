@@ -114,6 +114,7 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-livereload
   tzinfo-data
+  uglifier
   wdm
 
 BUNDLED WITH

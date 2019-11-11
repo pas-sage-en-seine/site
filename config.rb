@@ -12,7 +12,7 @@ end
 
 configure :build do
   activate :minify_css
-  activate :minify_javascript
+  activate :minify_javascript, compressor: proc { ::Uglifier.new harmony: true }
 end
 
 helpers do
