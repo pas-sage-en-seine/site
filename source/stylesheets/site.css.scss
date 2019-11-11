@@ -6,10 +6,6 @@ body {
 	background-color: $bg;
 }
 
-h1 {
-	margin-bottom: 5rem;
-}
-
 header {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -82,6 +78,12 @@ nav[role="navigation"] label.menu {
 	}
 }
 
+body > section {
+	h1 {
+		margin-bottom: 5rem;
+	}
+}
+
 section div.descriptions {
 	border-radius: 2rem;
 }
@@ -90,6 +92,14 @@ section div.descriptions {
 	section {
 		min-height: 100vh;
 		padding-top: 130px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		> div {
+			flex: 0 1 auto;
+		}
 
 		&:nth-child(even) {
 			background-color: $text;
@@ -99,15 +109,6 @@ section div.descriptions {
 }
 
 #festival {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	> div {
-		flex: 0 1 auto;
-	}
-
 	.logo {
 		width: 300px;
 		border-radius: 300px;
@@ -130,8 +131,117 @@ section div.descriptions {
 	a .logo-contact {
 		text-decoration: none;
 	}
+
 	.logo-contact {
 		height: 60px;
 		max-width: 60px;
+	}
+}
+
+#location {
+	display: flex;
+
+	padding: 5rem;
+
+	& > div {
+		flex: 1 1 auto;
+	}
+
+	& > img {
+		object-fit: contain;
+		align-self: flex-start;
+	}
+}
+
+
+/* Modals */
+#modal-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	color: $bg;
+	display: none;
+
+	&.show {
+		display: block;
+	}
+
+	.close {
+		background-color: #aaa;
+		padding: 5px;
+		cursor: pointer;
+	}
+}
+
+a.donate {
+	img {
+		height: 51px;
+		width: 148px;
+	}
+
+	&:focus, &:hover {
+		border: none;
+	}
+}
+
+progress {
+	width: 50%;
+	height: 2em;
+	margin: .5em 0;
+	border: 3px solid white;
+	border-radius: 5px;
+	background-color: black;
+
+	&::-webkit-progress-bar {
+		border-radius: 5px;
+	}
+
+	&::-webkit-progress-value {
+		border-radius: 5px;
+		background-color: $progress;
+		background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+		background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+		background-size: 40px 40px;
+	}
+
+	&::-moz-progress-bar {
+		border-radius: 5px;
+		background-color: $progress;
+		background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+		background-size: 40px 40px;
+	}
+}
+
+[data-modal-target] {
+	cursor: pointer;
+}
+
+[data-modal] {
+	position: fixed;
+	width: 75%;
+	height: 75%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid $bg;
+	border-radius: 5rem;
+	padding: 5rem;
+	background-color: $text;
+	transition: opacity linear 500ms, visibility 500ms linear;
+
+	&.hide {
+		visibility: hidden;
+		opacity: 0;
+		//transition: opacity linear 500ms, visibility 500ms linear;
+	}
+
+	&.show {
+		visibility: visible;
+		opacity: 1;
+		//transition: opacity linear 500ms, visibility 500ms linear;
+		z-index: 2;
 	}
 }

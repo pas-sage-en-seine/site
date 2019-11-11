@@ -5,28 +5,187 @@
 		<div class="grid-3 has-gutter descriptions">
 			<div>
 				<h2>Financement participatif</h2>
-				<%= svg_image_tag 'icons.svg', :heart %>
+				<%= svg_image_tag 'icons.svg', :heart, class: 'modal', data: { 'modal-target': :donate } %>
 			</div>
 			<div>
 				<h2>Appel à participation</h2>
-				<%= svg_image_tag 'icons.svg', :speaker %>
+				<%= svg_image_tag 'icons.svg', :speaker, data: { 'modal-target': :speaker } %>
 			</div>
 			<div>
 				<h2>Programme</h2>
-				<%= svg_image_tag 'icons.svg', :calendar %>
+				<%= svg_image_tag 'icons.svg', :calendar, data: { 'modal-target': :schedule } %>
 			</div>
 			<div>
 				<h2>Localisation</h2>
-				<%= svg_image_tag 'icons.svg', :place %>
+				<%= svg_image_tag 'icons.svg', :place, data: { 'modal-target': :location } %>
 			</div>
 			<div>
 				<h2>Restauration</h2>
-				<%= svg_image_tag 'icons.svg', :diet %>
+				<%= svg_image_tag 'icons.svg', :diet, data: { 'modal-target': :food } %>
 			</div>
 			<div>
 				<h2>Code de conduite</h2>
-				<%= svg_image_tag 'icons.svg', :team %>
+				<%= svg_image_tag 'icons.svg', :team, data: { 'modal-target': :coc } %>
 			</div>
 		</div>
+	</div>
+
+	<div class="hide" data-modal="donate">
+		<p>
+			Le festival PSES est entièrement gratuit pour permettre aux plus
+			grand nombre d’y participer, sans considération de ressources.<br>
+			Mais le monde actuel étant ce qu’il est, nous avons quand même
+			besoin de financer des choses !<br>
+		</p>
+
+		<ul>
+			<li>
+				Du matériel de captation pour vous permettre de suivre le
+				festival à l’autre bout de la planète
+			</li>
+			<li>
+				L’administratif courant de l’association (frais bancaires,
+				assurances…)
+			</li>
+		</ul>
+
+		<p>
+			Nous avons aussi besoin de financement pour assurer la présence tant
+			attendue des goodies et autres boissons houblonnées (ou non), qui même
+			si elles s’auto-financent, nécessitent de l’avance de trésorerie.
+		</p>
+
+		<p>
+			Cette année nous avons besoin d’un financement de 2 000€ afin
+			d’acquérir du matériel de captation audio.
+		</p>
+
+		<div class="txtcenter">
+			<progress value="0" max="2000"></progress><br>
+			0 / 2 000€
+		</div>
+
+		<br>
+		<p>
+			Si vous souhaitez nous soutenir financièrement, plusieurs moyens sont à
+			votre disposition :
+		</p>
+
+		<table class="txtcenter">
+			<tbody>
+			<tr>
+				<td>
+					<a href="https://liberapay.com/pses/donate" class="donate">
+						<%= image_tag 'liberapay.png', alt: 'Liberapay' %>
+					</a>
+				</td>
+				<td>
+					<a href="https://donorbox.org/pses" class="donate">
+						<%= image_tag 'donorbox.png', alt: 'Donorbox' %>
+					</a>
+				</td>
+				<td>
+					<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;currency_code=EUR&amp;business=paypal@passageenseine.fr&amp;item_name=Don%20PSES" class="donate">
+						<%= image_tag 'paypal.png', alt: 'Paypal' %>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					0% de commission<br>
+					(Nous reverserons 1%)
+				</td>
+				<td>
+					1.4% + 0.25€ de commission
+				</td>
+				<td>
+					3.4% + 0.25€ de commission
+				</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<p>
+			Pour un virement bancaire, merci de
+			<a href="mailto:bureau@passageenseine.fr?subject=IBAN%20don">nous contacter</a>
+			pour obtenir notre IBAN.
+		</p>
+	</div>
+
+	<div class="hide" data-modal="speaker">
+		<p>
+			L’appel à participation sera ouvert du 06 janvier au 16 avril.
+		</p>
+
+		<p>
+			Si vous êtes intéressé·e, rendez-vous
+			<a href="https://participer.passageenseine.fr" alt="Soumettre une proposition">
+				sur le site dédié
+			</a> !
+		</p>
+	</div>
+
+	<div class="hide" data-modal="schedule">
+		<p>
+			Un peu de patience, voyons !
+			Le programme sera communiqué le 04 mai ! 😊
+		</p>
+	</div>
+
+	<div id="location" class="hide" data-modal="location">
+		<div>
+			<h1>Lieu</h1>
+			<p>
+				Le festival a lieu aux abords de la Médiathèque Aragon à
+				Choisy-le-Roi, à 5 min à pied de la Gare de RER C « Choisy-le-Roi »
+			</p>
+			<p>
+				Le lieu est (vraiment) accessible aux personnes moins valides.
+			</p>
+
+			<h1>Hébergement</h1>
+			<p>
+				Un appart-hôtel est également présent à moins d'une minute de la médiathèque et vous propose des chambres à partir de 62€ par nuit.
+				Leur site
+				<a href="http://www.allsuites-apparthotel.com/residences-hotelieres/all-suites-appart-hotel-choisy-le-roi" alt="Appart Hôtel Choisy-le-Roi">ici</a>.
+			</p>
+		</div>
+		<%= image_tag 'plan.png', alt: 'Plan d’accès' %>
+	</div>
+
+	<div class="hide" data-modal="food">
+		<p>
+			Des foods-trucks seront présents tous les midis pendant le festival,
+			de 11h30 à 15h30.
+		</p>
+
+		<p>
+			Les menus proposés seront publiés ici-même dès que nous en aurons
+			connaissance.
+		</p>
+
+		<p>
+			Pas d’inquiétude pour nos ami·es carnistes, des menus spéciaux leurs
+			seront proposés.
+		</p>
+	</div>
+
+	<div class="hide" data-modal="coc">
+		<p>
+			Le festival PSES a pour vocation d’être un bon moment pour tou·tes
+			les participant·es, et non seulement la majorité.
+		</p>
+
+		<p>
+			La participation à notre festival vaut approbation de notre code de
+			conduite, disponible <%= link_to 'ici', 'code-of-conduct.pdf' %>.
+			<br>
+			Toute personne l’enfreignant se verra immédiatement exclue du festival.
+		</p>
+
+		<p>
+			La captation de vidéo ou de photo est soumise à l’<b>accord préalable</b>
+			des personnes présentes.
+		</p>
 	</div>
 </section>
