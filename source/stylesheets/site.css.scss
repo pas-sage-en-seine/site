@@ -228,6 +228,7 @@ progress {
 	padding: 5rem;
 	background-color: $text;
 	transition: opacity linear 500ms, visibility 500ms linear;
+	overflow: auto;
 
 	&.hide {
 		visibility: hidden;
