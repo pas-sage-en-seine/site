@@ -1,7 +1,7 @@
 <section id="association" class="pal">
 	<div class="w80 center">
           <h1 class="mbm txtcenter">L’association</h1>
-          
+
           <h2 class="txtcenter">Nous contacter</h2>
 
           <div class="txtcenter">
@@ -15,11 +15,11 @@
 
           <h2 class="txtcenter">Nos partenaires</h2>
 
-          <div class="autogrid has-gutter txtcenter">
+          <div id="sponsors" class="autogrid has-gutter txtcenter">
             <% data.partenaires.each do |p| %>
               <div>
                 <% link_to p.link, title: p.name, alt: p.name do %>
-                  <%= image_tag  p.logo %>
+                  <%= image_tag p.logo %>
                 <% end %>
               </div>
             <% end %>
