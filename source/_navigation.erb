@@ -1,7 +1,7 @@
 <nav class="txtright navigation" role="navigation">
 	<input type="checkbox" id="button" class="menu">
-	<label for="button" class="menu" onclick></label>
-	<a class="plm" href="#festival">Le festival</a>
-	<a class="plm" href="#infos">Infos pratiques</a>
-	<a class="plm" href="#association">L’association</a>
+        <label for="button" class="menu" onclick></label>
+        <%= link_to "Le festival", "#festival", class: "plm", title: "Cliquer ici pour aller à la section sur le festival", accesskey: "f" %>
+        <%= link_to "Infos pratiques", "#infos", class: "plm", title: "Cliquer ici pour aller à la section sur les informations pratiques", accesskey: "i" %>
+        <%= link_to "L’association", "#festival", class: "plm", title: "Cliquer ici pour aller à la section sur l’association", accesskey: "a" %>
 </nav>

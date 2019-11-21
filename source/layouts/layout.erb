@@ -1,26 +1,26 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title><%= current_page.data.title || "Festival Pas Sage en Seine 2020" %></title>
-		<%= stylesheet_link_tag "site" %>
-		<%= javascript_include_tag "site" %>
-	</head>
-	<body>
-		<header>
-			<div class="w80 center autogrid">
-				<div class="brand">
-					<a class="" href="/">PSES</a>
-                                </div>
-                                <%= partial "navigation" %>
-			</div>
-		</header>
-		<%= yield %>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title || "Festival Pas Sage en Seine 2020" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <header>
+      <div class="w80 center autogrid">
+        <div class="brand">
+          <%= link_to 'PSES', '/', title: 'Accueil du site' %>
+        </div>
+        <%= partial "navigation" %>
+      </div>
+    </header>
+    <%= yield %>
 
-		<div id="modal-background">
-			<span class="close">[X]</span>
-		</div>
-	</body>
+    <div id="modal-background">
+      <span class="close">[X]</span>
+    </div>
+  </body>
 </html>
