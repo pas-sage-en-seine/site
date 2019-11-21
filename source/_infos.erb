@@ -35,7 +35,7 @@
 			Le festival PSES est entièrement gratuit pour permettre aux plus
 			grand nombre d’y participer, sans considération de ressources.<br>
 			Mais le monde actuel étant ce qu’il est, nous avons quand même
-			besoin de financer des choses !<br>
+			besoin de financer des choses !
 		</p>
 
 		<ul>
@@ -71,43 +71,31 @@
 			votre disposition :
 		</p>
 
-		<table class="txtcenter">
-			<tbody>
-			<tr>
-				<td>
-					<a href="https://liberapay.com/pses/donate" class="donate">
-						<%= image_tag 'liberapay.png', alt: 'Liberapay' %>
-					</a>
-				</td>
-				<td>
-					<a href="https://donorbox.org/pses" class="donate">
-						<%= image_tag 'donorbox.png', alt: 'Donorbox' %>
-					</a>
-				</td>
-				<td>
-					<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;currency_code=EUR&amp;business=paypal@passageenseine.fr&amp;item_name=Don%20PSES" class="donate">
-						<%= image_tag 'paypal.png', alt: 'Paypal' %>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					0% de commission<br>
-					(Nous reverserons 1%)
-				</td>
-				<td>
-					1.4% + 0.25€ de commission
-				</td>
-				<td>
-					3.4% + 0.25€ de commission
-				</td>
-			</tr>
-			</tbody>
-		</table>
+                <div class="grid-3 has-gutter center txtcenter mbm">
+                  <div>
+                    <% link_to 'https://liberapay.com/pses/donate', class: 'donate' do %>
+                      <%= image_tag 'liberapay.png', alt: 'Liberapay' %>
+                    <% end %><br>
+                    0% de commission<br>
+                    (Nous reverserons 1%)
+                  </div>
+                  <div>
+                    <% link_to 'https://donorbox.org/pses', class: 'donate' do %>
+                      <%= image_tag 'donorbox.png', alt: 'Donorbox' %>
+                    <% end %><br>
+                      1.4% + 0.25€ de commission
+                  </div>
+                  <div>
+                    <% link_to 'https://paypal.com/cgi-bin/webscr?cmd=_donations&amp;currency_code=EUR&amp;business=paypal@passageenseine.fr&amp;item_name=Don%20PSES', class: 'donate' do %>
+                      <%= image_tag 'paypal.png', alt: 'Paypal' %>
+                    <% end %><br>
+                    3.4% + 0.25€ de commission
+                  </div>
+                </div>
 
 		<p>
 			Pour un virement bancaire, merci de
-			<a href="mailto:bureau@passageenseine.fr?subject=IBAN%20don">nous contacter</a>
+			<%= link_to "nous contacter", "mailto:bureau@passageenseine.fr?subject=IBAN%20don", title: 'Envoyer un courriel de demande d’IBAN au bureau' %>
 			pour obtenir notre IBAN.
 		</p>
 	</div>
@@ -118,10 +106,8 @@
 		</p>
 
 		<p>
-			Si vous êtes intéressé·e, rendez-vous
-			<a href="https://participer.passageenseine.fr" alt="Soumettre une proposition">
-				sur le site dédié
-			</a> !
+                  Si vous êtes intéressé·e, rendez-vous
+                  <%= link_to "sur le site dédié", "https://participer.passageenseine.fr", title: "Soumettre une proposition" %> !
 		</p>
 	</div>
 
@@ -146,8 +132,8 @@
 			<h1>Hébergement</h1>
 			<p>
 				Un appart-hôtel est également présent à moins d'une minute de la médiathèque et vous propose des chambres à partir de 62€ par nuit.
-				Leur site
-				<a href="http://www.allsuites-apparthotel.com/residences-hotelieres/all-suites-appart-hotel-choisy-le-roi" alt="Appart Hôtel Choisy-le-Roi">ici</a>.
+                                Leur site
+                                <%= link_to "ici", "http://www.allsuites-apparthotel.com/residences-hotelieres/all-suites-appart-hotel-choisy-le-roi", title: "Appart Hôtel Choisy-le-Roi" %>.
 			</p>
 		</div>
 		<%= image_tag 'plan.png', alt: 'Plan d’accès' %>
