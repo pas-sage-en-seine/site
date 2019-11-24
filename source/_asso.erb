@@ -1,28 +1,28 @@
 <section id="association" class="pal">
-	<div class="w80 center">
-          <h1 class="mbm txtcenter">L’association</h1>
+	<div class="w60 center txtcenter">
+		<h1 class="mbm">L’association</h1>
 
-          <h2 class="txtcenter">Nous contacter</h2>
+		<h2>Nous contacter</h2>
 
-          <div class="txtcenter">
-            <% link_to "https://mamot.fr/@passageenseine", title: 'Mastodon', alt: 'Logo Mastodon' do %>
-              <%= svg_image_tag 'logos.svg', 'mastodon', class: 'logo-contact' %>
-            <% end %>
-            <% link_to "https://mamot.fr/@passageenseine", title: 'Twitter', alt: 'Logo Twitter' do %>
-              <%= svg_image_tag 'logos.svg', 'twitter', class: 'logo-contact' %>
-            <% end %>
-          </div>
+		<div id="contact" class="autogrid has-gutter">
+			<a href="https://mamot.fr/@passageenseine" title="Mastodon" alt="Mastodon" target="_blank">
+				<%= svg_image_tag 'logos.svg', 'mastodon' %>
+			</a>
+			<a href="https://twitter.com/passageenseine" title="Twitter" alt="Twitter" target="_blank">
+				<%= svg_image_tag 'logos.svg', 'twitter' %>
+			</a>
+		</div>
 
-          <h2 class="txtcenter">Nos partenaires</h2>
+		<h2>Nos partenaires</h2>
 
-          <div id="sponsors" class="autogrid has-gutter txtcenter">
-            <% data.partenaires.each do |p| %>
-              <div>
-                <% link_to p.link, title: p.name, alt: p.name do %>
-                  <%= image_tag p.logo %>
-                <% end %>
-              </div>
-            <% end %>
-          </div>
+		<div id="sponsors" class="autogrid has-gutter">
+			<% data.partenaires.each do |k, p| %>
+				<% content_tag :div, id: k do %>
+					<% link_to p.link, title: p.name, alt: p.name, target: :_blank do %>
+						<%= image_tag p.logo %>
+					<% end %>
+				<% end %>
+			<% end %>
+		</div>
 	</div>
 </section>

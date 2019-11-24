@@ -1,12 +1,16 @@
-- name: Octopuce
+octopuce:
+  name: Octopuce
   link: https://www.octopuce.fr/
   logo: octopuce.svg
-- name: Codeurs en liberté
+codeur-en-liberte:
+  name: Codeurs en liberté
   link: https://www.xn--codeursenlibert-pnb.fr/
   logo: codeurs-en-liberte.svg
-- name: Code Lutin
+code-lutin:
+  name: Code Lutin
   link: https://www.codelutin.com/
   logo: code-lutin.png
-- name: Ville de Choisy-le-Roi
+choisy-le-roi:
+  name: Ville de Choisy-le-Roi
   link: https://www.choisyleroi.fr/
   logo: choisy-le-roi.png

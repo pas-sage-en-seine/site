@@ -1,7 +1,20 @@
-<nav class="txtright navigation" role="navigation">
-	<input type="checkbox" id="button" class="menu">
-        <label for="button" class="menu" onclick></label>
-        <%= link_to "Le festival", "#festival", class: "plm", title: "Cliquer ici pour aller à la section sur le festival", accesskey: "f" %>
-        <%= link_to "Infos pratiques", "#infos", class: "plm", title: "Cliquer ici pour aller à la section sur les informations pratiques", accesskey: "i" %>
-        <%= link_to "L’association", "#association", class: "plm", title: "Cliquer ici pour aller à la section sur l’association", accesskey: "a" %>
-</nav>
+<header>
+	<div class="w80 center autogrid">
+		<div class="brand">
+			<a href="/" title="Accueil du site">PSES</a>
+		</div>
+		<nav class="txtright navigation" role="navigation">
+			<input type="checkbox" id="button" class="menu">
+			<label for="button" class="menu" onclick></label>
+			<a href="#festival" class="plm" title="Cliquer ici pour aller à la section sur le festival">
+				Le festival
+			</a>
+			<a href="#infos" class="plm" title="Cliquer ici pour aller à la section sur les informations pratiques">
+				Infos pratiques
+			</a>
+			<a href="#association" class="plm" title="Cliquer ici pour aller à la section sur l’association">
+				L’association
+			</a>
+		</nav>
+	</div>
+</header>

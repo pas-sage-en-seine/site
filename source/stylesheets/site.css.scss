@@ -1,7 +1,9 @@
 @import "variables";
 @import "KNACSS";
+@import "fonts";
 
 body {
+	font-family: 'Ubuntu';
 	color: $text;
 	background-color: $bg;
 }
@@ -9,31 +11,28 @@ body {
 header {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	border-bottom: 1px solid $bg;
 	position: fixed;
 	top: 0;
 	width: 100%;
 
 	background: $text;
 	color: $bg;
-	border-top: 2px solid #222;
-	border-bottom: 2px solid #222;
-	font-size: 3rem;
+	font-size: 2rem;
 
 	a {
 		color: $bg;
 		text-decoration: underline dashed;
+		text-decoration-thickness: 1px;
 
 		&:hover, &:focus {
 			color: darken($bg, 20%);
 			text-decoration: underline dashed;
+			text-decoration-thickness: 1px;
 		}
 	}
 
-	div.brand {
-		padding: 1rem;
-	}
-
-	nav {
+	div.brand, nav {
 		padding: 1rem;
 	}
 }
@@ -106,7 +105,7 @@ section div.descriptions {
 	}
 }
 
-#festival {
+#title {
 	.logo {
 		width: 300px;
 		border-radius: 300px;
@@ -114,12 +113,16 @@ section div.descriptions {
 	}
 }
 
+#festival {
+	font-size: 2.5rem;
+}
+
 #infos {
 	div.descriptions {
 		margin-top: 3rem;
 
 		div {
-			border: 1px solid $bg;
+			border: 1px solid $text;
 			border-radius: 1rem;
 		}
 	}
@@ -131,7 +134,6 @@ section div.descriptions {
 	}
 
 	.logo-contact {
-		height: 60px;
 		max-width: 60px;
 	}
 }
@@ -147,15 +149,16 @@ section div.descriptions {
 	& > img {
 		object-fit: contain;
 		align-self: flex-start;
+		margin-left: 1rem;
 	}
 }
 
-#sponsors {
-	img {
-		max-width: 150px;
-	}
+#contact svg, #sponsors img {
+	max-width: 200px;
+	background-color: $bg;
+	padding: 15px;
+	border-radius: 30px;
 }
-
 
 /* Modals */
 #modal-background {

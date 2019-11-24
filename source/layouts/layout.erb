@@ -9,14 +9,7 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <header>
-      <div class="w80 center autogrid">
-        <div class="brand">
-          <%= link_to 'PSES', '/', title: 'Accueil du site' %>
-        </div>
-        <%= partial "navigation" %>
-      </div>
-    </header>
+    <%= partial :navigation %>
     <%= yield %>
 
     <div id="modal-background">

@@ -35,17 +35,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1143"
+     inkscape:window-width="1680"
+     inkscape:window-height="993"
      id="namedview129"
      showgrid="false"
-     inkscape:zoom="0.79856114"
-     inkscape:cx="427.38021"
-     inkscape:cy="286.32847"
-     inkscape:window-x="1680"
+     inkscape:zoom="0.39928057"
+     inkscape:cx="385.0694"
+     inkscape:cy="133.4037"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g71" /><g
+     inkscape:current-layer="Calque_1" /><g
      id="g3"
      transform="matrix(4.7751906,0,0,4.7751906,6.9869211,-29.763039)"><rect
        x="86.598999"
@@ -207,5 +207,6 @@
      x="148.20789"
      y="62.483704"
      style="font-size:9.15143871px;line-height:1.25;font-family:sans-serif;fill:#3278b5;fill-opacity:1">serveurs et infogérance haute-fidélité</tspan></text>
+
 
 </g></svg>
