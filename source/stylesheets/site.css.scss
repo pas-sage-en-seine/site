@@ -232,10 +232,6 @@ progress {
 	}
 }
 
-[data-modal-target] {
-	cursor: pointer;
-}
-
 [data-modal] {
 	position: fixed;
 	width: 75%;
@@ -253,13 +249,11 @@ progress {
 	&.hide {
 		visibility: hidden;
 		opacity: 0;
-		//transition: opacity linear 500ms, visibility 500ms linear;
 	}
 
 	&.show {
 		visibility: visible;
 		opacity: 1;
-		//transition: opacity linear 500ms, visibility 500ms linear;
 		z-index: 2;
 	}
 }
