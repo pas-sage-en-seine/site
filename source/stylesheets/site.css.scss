@@ -122,7 +122,7 @@ section div.descriptions {
 		margin-top: 3rem;
 
 		div {
-			border: 1px solid $text;
+			border: 2px solid $text;
 			border-radius: 1rem;
 		}
 	}
@@ -176,9 +176,20 @@ section div.descriptions {
 	}
 
 	.close {
-		background-color: #aaa;
-		padding: 5px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		margin: 5px 10px;
+		font-size: 3rem;
+		border-radius: $modal-radius;
 		cursor: pointer;
+
+		&:hover {
+			background-color: #aaa;
+		}
 	}
 }
 
@@ -233,8 +244,8 @@ progress {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border: 1px solid $bg;
-	border-radius: 5rem;
-	padding: 5rem;
+	border-radius: $modal-radius;
+	padding: $modal-radius;
 	background-color: $text;
 	transition: opacity linear 500ms, visibility 500ms linear;
 	overflow: auto;

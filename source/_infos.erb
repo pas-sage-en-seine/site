@@ -5,7 +5,7 @@
 		<div class="grid-3 has-gutter descriptions">
 			<div>
 				<h2>Financement participatif</h2>
-				<%= svg_image_tag 'icons.svg', :heart, class: 'modal', data: { 'modal-target': :donate } %>
+				<%= svg_image_tag 'icons.svg', :heart, data: { 'modal-target': :donate } %>
 			</div>
 			<div>
 				<h2>Appel à participation</h2>
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 
-	<div class="hide" data-modal="donate">
+	<div id="donate" class="hide" data-modal="donate">
 		<p>
 			Le festival PSES est entièrement gratuit pour permettre aux plus
 			grand nombre d’y participer, sans considération de ressources.<br>
@@ -103,7 +103,7 @@
 		</p>
 	</div>
 
-	<div class="hide" data-modal="speaker">
+	<div id="speaker" class="hide" data-modal="speaker">
 		<p>
 			L’appel à participation sera ouvert du 06 janvier au 16 avril.
 		</p>
@@ -120,7 +120,7 @@
 		</p>
 	</div>
 
-	<div class="hide" data-modal="schedule">
+	<div id="schedule" class="hide" data-modal="schedule">
 		<p>
 			Un peu de patience, voyons !
 			<br>
@@ -150,7 +150,7 @@
 		<%= image_tag 'plan.png', alt: 'Plan d’accès' %>
 	</div>
 
-	<div class="hide" data-modal="food">
+	<div id="food" class="hide" data-modal="food">
 		<p>
 			Des foods-trucks seront présents tous les midis pendant le festival,
 			de 11h30 à 15h30.
@@ -167,7 +167,7 @@
 		</p>
 	</div>
 
-	<div class="hide" data-modal="coc">
+	<div id="coc" class="hide" data-modal="coc">
 		<p>
 			Le festival PSES a pour vocation d’être un bon moment pour tou·tes
 			les participant·es, et non seulement la majorité.
