@@ -69,14 +69,18 @@
 		</p>
 
 		<p>
-			Cette année nous avons besoin d’un financement de 2 000€ afin
+			Cette année nous avons besoin d’un financement de <%= data.donate.target %>€ afin
 			d’acquérir du matériel de captation audio.
 		</p>
 
+		<p>
+			Plus d’information sur <%= link_to 'la page dédiée', '/donate.html' %>.
+		</p>
+
 		<div class="txtcenter">
-			<progress value="0" max="2000"></progress>
+			<progress value="<%= data.donate.current %>" max="<%= data.donate.target %>"></progress>
 			<br>
-			0 / 2 000€
+			<%= data.donate.current %> / <%= data.donate.target %>€
 		</div>
 
 		<br>
@@ -157,6 +161,10 @@
 				Un appart-hôtel est présent à moins d'une minute de la
 				médiathèque. Leur site
 				<a href="http://www.allsuites-apparthotel.com/residences-hotelieres/all-suites-appart-hotel-choisy-le-roi" title="Appart Hôtel Choisy-le-Roi">ici</a>.
+			</p>
+			<p>
+				Des logements sont aussi généralement disponible aux alentours via
+				<a href="https://www.airbnb.fr/s/Choisy~le~Roi/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJSzO-mZB05kcRYDmLaMOCCwQ&search_type=section_navigation&screen_size=large&checkin=2020-07-01&checkout=2020-07-06">AirBNB</a>
 			</p>
 		</div>
 		<%= image_tag 'plan.png', alt: 'Plan d’accès' %>

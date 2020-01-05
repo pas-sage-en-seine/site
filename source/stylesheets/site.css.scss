@@ -53,6 +53,7 @@ nav[role="navigation"] label.menu {
 @media screen and (max-width: 800px) {
 	html, body {
 		margin: 0;
+
 		header .brand {
 			font-size: 1.5rem;
 		}
@@ -101,6 +102,14 @@ section div.descriptions {
 		&:nth-child(even) {
 			background-color: $text;
 			color: $bg;
+
+			a {
+				color: $bg;
+
+				&:focus, &:hover {
+					color: lighten($bg, 20%);
+				}
+			}
 		}
 	}
 }
@@ -170,6 +179,14 @@ section div.descriptions {
 	background-color: rgba(0, 0, 0, .4);
 	color: $bg;
 	display: none;
+
+	a {
+		color: $bg;
+
+		&:focus, &:hover {
+			color: darken($bg, 20%);
+		}
+	}
 
 	&.show {
 		display: block;
@@ -255,5 +272,21 @@ progress {
 		visibility: visible;
 		opacity: 1;
 		z-index: 2;
+	}
+}
+
+#needs {
+	.list {
+		display: flex;
+
+		& > ul {
+			flex: 1 1 auto;
+			align-self: center;
+		}
+
+		& > img {
+			object-fit: contain;
+			align-self: flex-start;
+		}
 	}
 }

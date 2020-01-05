@@ -1,0 +1,175 @@
+---
+title: Pas Sage en Seine - Financement participatif
+---
+<header>
+	<div class="w80 center autogrid">
+		<div class="brand">
+			<a href="/" title="Accueil du site">PSES</a>
+		</div>
+		<nav class="txtright navigation" role="navigation">
+			<input type="checkbox" id="button" class="menu">
+			<label for="button" class="menu" onclick></label>
+			<a href="#donate" class="plm" title="Cliquer ici pour aller à la section sur l’appel à financement participatif">
+				Financement
+			</a>
+			<a href="#needs" class="plm" title="Cliquer ici pour aller à la section des besoins du festival">
+				Besoins
+			</a>
+			<a href="#accounting" class="plm" title="Cliquer ici pour aller à la section sur les bilans financiers">
+				Bilans financiers
+			</a>
+		</nav>
+	</div>
+</header>
+
+
+<div class="content">
+	<section id="donate" class="pal">
+		<div class="w50">
+			<h1>
+				Financement participatif du festival
+			</h1>
+
+			<p>
+				Le festival PSES est entièrement gratuit pour permettre aux plus
+				grand nombre d’y participer, sans considération de ressources.<br>
+				Mais le monde actuel étant ce qu’il est, nous avons quand même
+				besoin de financer des choses !
+			</p>
+
+			<ul>
+				<li>
+					Du matériel de captation pour vous permettre de suivre le
+					festival à l’autre bout de la planète
+				</li>
+				<li>
+					L’administratif courant de l’association (frais bancaires,
+					assurances…)
+				</li>
+			</ul>
+
+			<p>
+				Nous avons aussi besoin de financement pour assurer la présence tant
+				attendue des goodies et autres boissons houblonnées (ou non), qui
+				même si elles s’auto-financent, nécessitent de l’avance de trésorerie.
+			</p>
+
+			<p>
+				Cette année nous avons besoin d’un financement de <%= data.donate.target %>€ afin
+				d’acquérir du matériel de captation audio.
+			</p>
+
+			<div class="txtcenter">
+				<progress value="<%= data.donate.current %>" max="<%= data.donate.target %>"></progress>
+				<br>
+				<%= data.donate.current %> / <%= data.donate.target %>€
+			</div>
+
+			<br>
+			<p>
+				Si vous souhaitez nous soutenir financièrement, plusieurs moyens
+				sont à votre disposition :
+			</p>
+
+			<div class="grid-3 has-gutter center txtcenter mbm">
+				<div>
+					<% link_to 'https://liberapay.com/pses/donate', class: 'donate' do %>
+						<%= image_tag 'liberapay.png', alt: 'Liberapay' %>
+					<% end %><br>
+					0% de commission<br>
+					(Nous reverserons 1%)
+				</div>
+				<div>
+					<% link_to 'https://donorbox.org/pses', class: 'donate' do %>
+						<%= image_tag 'donorbox.png', alt: 'Donorbox' %>
+					<% end %><br>
+					1.4% + 0.25€ de commission
+				</div>
+				<div>
+					<% link_to 'https://paypal.com/cgi-bin/webscr?cmd=_donations&amp;currency_code=EUR&amp;business=paypal@passageenseine.fr&amp;item_name=Don%20PSES', class: 'donate' do %>
+						<%= image_tag 'paypal.png', alt: 'Paypal' %>
+					<% end %><br>
+					3.4% + 0.25€ de commission
+				</div>
+			</div>
+
+			<p>
+				Pour un virement bancaire, merci de
+				<%= link_to "nous contacter", "mailto:bureau@passageenseine.fr?subject=IBAN%20don", title: 'Envoyer un courriel de demande d’IBAN au bureau' %>
+				pour obtenir notre IBAN.
+			</p>
+		</div>
+	</section>
+
+	<section id="needs" class="pal">
+		<div class="w50">
+			<h1>
+				Nos besoins
+			</h1>
+
+			<p>
+				Cette année, nous avons essentiellement besoin d’acquérir du
+				matériel audio, le matériel de captation ayant déjà été acquis
+				en 2018.
+			</p>
+
+			<p>
+				Ce matériel vient en complément de celui gracieusement mis à
+				disposition par <a href="https://www.octopuce.fr/" alt="Octopuce">Octopuce</a>
+				chaque année.
+			</p>
+		</div>
+		<div class="list">
+			<%= image_tag 'captation.png', alt: 'Système de captation' %>
+
+			<ul>
+				<li>1 micro SM 58 sans fil (~500€)</li>
+				<li>1 table de mixage Studio Live AR 8 (~350€)</li>
+				<li>1 boîtier de scène 40m (~200€)</li>
+				<li>2 cartes d’acquisition BlackMagic DeckLink (~180€ l’unité)</li>
+				<li>2 micros SM 58 (~100€ l’unité)</li>
+				<li>3 convertisseurs HDMI/SDI (~70€ l’unité)</li>
+				<li>3 convertisseurs SDI/HDMI (~70€ l’unité)</li>
+				<li>1 splitter HDMI vers HDMI + RCA (~20€)</li>
+				<li>1 doubleur HDMI (~10€)</li>
+				<li>2 convertisseurs RCA/XLR (~15€ l’unité)</li>
+				<li><strong>Total : ~2100€</strong></li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="accounting" class="pal">
+		<div class="w50">
+			<h1>Bilans financiers</h1>
+
+			<p>
+				Le festival n’a pas vocation à générer des bénéfices, l’argent
+				collecté sert uniquement à financer le festival, qui
+				s’auto-finance <em>via</em> la vente de goodies sur place et ne serait
+				pas possible sans la générosité de nos sponsors.
+				Le budget global d’une édition tourne autour de 5 000€.
+			</p>
+
+			<p>
+				Afin d’être transparents sur la gestion financière de
+				l’association, d’autant plus que nous recourons au financement
+				participatif, nos bilans comptables sont disponibles ici :
+			</p>
+
+			<ul>
+				<li><a href="bilan/2017.pdf">2017</a> : bénéfice de 1 358,97€</li>
+				<li><a href="bilan/2018.pdf">2018</a> : bénéfice de 1 120,86€</li>
+				<li><a href="bilan/2019.pdf">2019</a> : bénéfice de 178,24€</li>
+				<li>Nous avons actuellement ~2 500€ de trésorerie.</li>
+			</ul>
+
+			<p>
+				Le grand livre comptable de l’association n’est pas publiable
+				(RGPD, demande d’anonymat…) mais n’hésitez pas à
+				<a href="index.html#association" alt="Contacter l’association">nous contacter</a>
+				si vous souhaitez obtenir plus de renseignement sur notre
+				comptabilité.
+			</p>
+		</div>
+	</section>
+</div>

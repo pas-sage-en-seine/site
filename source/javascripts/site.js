@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
     close: function (modal) {
+      console.log("close", this)
       modal.classList.remove("show")
       modal.classList.add("hide")
       this.modalBackground.appendChild(this.closeButton)

@@ -108,4 +108,15 @@
        </g>
      </g>
   </symbol>
+  <symbol id="email" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
+  <rect y="76.8" style="fill:#78B9EB;" width="512" height="358.4"/>
+  <g>
+  	<rect x="256" y="76.8" style="fill:#5A8BB0;" width="256" height="358.4"/>
+  	<polygon style="fill:#5A8BB0;" points="512,345.6 256,179.2 0,345.6 0,435.2 512,435.2 	"/>
+  </g>
+  <polygon style="fill:#3C5D76;" points="512,345.6 256,179.2 256,435.2 512,435.2 "/>
+  <polygon style="fill:#C9E3F7;" points="512,166.4 256,358.4 0,166.4 0,76.8 512,76.8 "/>
+  <polygon style="fill:#78B9EB;" points="512,166.4 256,358.4 256,76.8 512,76.8 "/>
+</symbol>
+
 </svg>

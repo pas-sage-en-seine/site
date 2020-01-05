@@ -1,6 +1,0 @@
-- name: Accueil
-  link: /
-  goto: home
-- name: À propos
-  link: /about.html
-  goto: about
