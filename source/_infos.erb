@@ -44,7 +44,7 @@
 
 	<div id="donate" class="hide" data-modal="donate">
 		<p>
-			Le festival PSES est entièrement gratuit pour permettre aux plus
+			Le festival PSES est entièrement gratuit pour permettre au plus
 			grand nombre d’y participer, sans considération de ressources.<br>
 			Mais le monde actuel étant ce qu’il est, nous avons quand même
 			besoin de financer des choses !
@@ -64,8 +64,7 @@
 		<p>
 			Nous avons aussi besoin de financement pour assurer la présence tant
 			attendue des goodies et autres boissons houblonnées (ou non), qui
-			même
-			si elles s’auto-financent, nécessitent de l’avance de trésorerie.
+			même si elles s’auto-financent, nécessitent de l’avance de trésorerie.
 		</p>
 
 		<p>
@@ -74,7 +73,7 @@
 		</p>
 
 		<p>
-			Plus d’information sur <%= link_to 'la page dédiée', '/donate.html' %>.
+			Plus d’information sur <%= link_to 'la page dédiée', '/donate.html', title: 'Aller sur la page de donation du festival Pas Sage En Seine' %>.
 		</p>
 
 		<div class="txtcenter">
@@ -86,26 +85,25 @@
 		<br>
 		<p>
 			Si vous souhaitez nous soutenir financièrement, plusieurs moyens
-			sont à
-			votre disposition :
+			sont à votre disposition :
 		</p>
 
 		<div class="grid-3 has-gutter center txtcenter mbm">
 			<div>
-				<% link_to 'https://liberapay.com/pses/donate', class: 'donate' do %>
+				<% link_to 'https://liberapay.com/pses/donate', class: 'donate', title: 'Faire un don au festival chez Liberapay' do %>
 					<%= image_tag 'liberapay.png', alt: 'Liberapay' %>
 				<% end %><br>
 				0% de commission<br>
 				(Nous reverserons 1%)
 			</div>
 			<div>
-				<% link_to 'https://donorbox.org/pses', class: 'donate' do %>
+				<% link_to 'https://donorbox.org/pses', class: 'donate', title: 'Faire un don au festival chez Donorbox' do %>
 					<%= image_tag 'donorbox.png', alt: 'Donorbox' %>
 				<% end %><br>
 				1.4% + 0.25€ de commission
 			</div>
 			<div>
-				<% link_to 'https://www.paypal.me/PasSageEnSeine/0eur', class: 'donate' do %>
+				<% link_to 'https://www.paypal.me/PasSageEnSeine/0eur', class: 'donate', title: 'Faire un don au festival chez Paypal' do %>
 					<%= image_tag 'paypal.png', alt: 'Paypal' %>
 				<% end %><br>
 				3.4% + 0.25€ de commission
@@ -163,7 +161,7 @@
 				<a href="http://www.allsuites-apparthotel.com/residences-hotelieres/all-suites-appart-hotel-choisy-le-roi" title="Appart Hôtel Choisy-le-Roi">ici</a>.
 			</p>
 			<p>
-				Des logements sont aussi généralement disponible aux alentours via
+				Des logements sont aussi généralement disponibles aux alentours via
 				<a href="https://www.airbnb.fr/s/Choisy~le~Roi/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJSzO-mZB05kcRYDmLaMOCCwQ&search_type=section_navigation&screen_size=large&checkin=2020-07-01&checkout=2020-07-06">AirBNB</a>
 			</p>
 		</div>
@@ -195,7 +193,7 @@
 
 		<p>
 			La participation à notre festival vaut approbation de notre code de
-			conduite, disponible <%= link_to 'ici', 'code-of-conduct.pdf' %>.
+			conduite, disponible <%= link_to 'ici', 'code-of-conduct.pdf', title: 'Lire le code de conduite au format PDF' %>.
 			<br>
 			Toute personne l’enfreignant se verra immédiatement exclue du
 			festival.
