@@ -12,23 +12,29 @@
 
 		<h2 class="mtm">Nous contacter</h2>
 
-		<div id="contact" class="autogrid has-gutter">
+                <div id="contact" class="autogrid has-gutter">
+                    <div>
 			<a href="mailto:bureau@passageenseine.fr" title="Courriel, ouvre une nouvelle fenêtre" alt="Courriel" target="_blank">
 				<%= svg_image_tag 'logos.svg', 'email' %>
-			</a>
+                        </a>
+                    </div>
+                    <div>
 			<a href="https://mamot.fr/@passageenseine" title="Mastodon, ouvre une nouvelle fenêtre" alt="Mastodon" target="_blank">
 				<%= svg_image_tag 'logos.svg', 'mastodon' %>
-			</a>
+                        </a>
+                    </div>
+                    <div>
 			<a href="https://twitter.com/passageenseine" title="Twitter, ouvre une nouvelle fenêtre" alt="Twitter" target="_blank">
 				<%= svg_image_tag 'logos.svg', 'twitter' %>
-			</a>
+                        </a>
+                    </div>
 		</div>
 
 		<h2 class="mtm">Nos partenaires</h2>
 
 		<div id="sponsors" class="autogrid has-gutter">
 			<% data.partners.each do |k, p| %>
-				<% content_tag :div, id: k do %>
+				<% content_tag :div do %>
 					<% link_to p.link, title: p.name, alt: p.name, target: :_blank do %>
 						<%= image_tag p.logo %>
 					<% end %>

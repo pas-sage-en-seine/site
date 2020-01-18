@@ -64,13 +64,12 @@ nav[role="navigation"] label.menu {
 	nav[role="navigation"] label.menu {
 		display: inline;
 		width: 100%;
-		/*font-size: 3rem;*/
-		margin-top: 1rem;
+		margin-top: .5rem;
 	}
 	nav[role="navigation"] label.menu:after {
 		position: absolute;
-		right: .25em;
-		top: 0;
+		right: 1.5rem;
+		top: 1.5rem;
 		content: "\2261";
 	}
 	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:after {
@@ -79,6 +78,12 @@ nav[role="navigation"] label.menu {
 	nav[role="navigation"] input[type=checkbox].menu:checked ~ a {
 		display: block;
 		font-size: 1.5rem;
+	}
+	.w50, .w60 {
+		width: 90%;
+	}
+	.pal {
+		padding: 1rem;
 	}
 }
 
@@ -163,10 +168,11 @@ section div.descriptions {
 }
 
 #contact svg, #sponsors img {
-	max-width: 200px;
+	max-width: 20rem;
+	max-height: 20rem;
 	background-color: $bg;
-	padding: 15px;
-	border-radius: 30px;
+	padding: 1.5rem;
+	border-radius: 3rem;
 }
 
 /* Modals */
@@ -275,6 +281,23 @@ progress {
 	}
 }
 
+@media screen and (max-width: 800px) {
+	#festival {
+		font-size: inherit;
+	}
+	[data-modal] {
+		border-radius: 2rem;
+		padding: 2rem;
+		padding-top: 4rem;
+	}
+	#contact svg, #sponsors img {
+		max-width: 10rem;
+		max-height: 10rem;
+		padding: 1rem;
+		border-radius: 1rem;
+	}
+}
+
 #needs {
 	.list {
 		display: flex;
@@ -287,6 +310,26 @@ progress {
 		& > img {
 			object-fit: contain;
 			align-self: flex-start;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#needs {
+		.list {
+			display: block;
+			& > ul {
+				padding-top: 1rem;
+			}
+		}
+	}
+	#location {
+		display: block;
+		padding: 2rem;
+		padding-top: 4rem;
+		& > img {
+			margin: 0;
+			padding-bottom: 2rem;
 		}
 	}
 }
