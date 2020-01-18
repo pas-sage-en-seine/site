@@ -16,13 +16,13 @@ configure :build do
   #activate :minify_css
   #activate :minify_javascript, compressor: proc { ::Uglifier.new harmony: true }
   # activate :asset_hash
-  set :http_prefix, '/tmp'
+  #set :http_prefix, '/tmp'
 end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
   deploy.host          = 'rabbit.passageenseine.fr'
-  deploy.path          = '/var/www/pses/tmp'
+  deploy.path          = '/var/www/pses'
   deploy.port          = 2222
   deploy.build_before  = true
   # Optional Settings
