@@ -108,12 +108,18 @@ nav[role="navigation"] label.menu {
 			padding: .5em;
 		}
 	}
+	:target:before {
+		content: "";
+		display: block;
+		height: 8rem; /* fixed header height*/
+		margin: -8rem 0 0; /* negative fixed header height */
+	}
 }
 
-div.toc {
+nav.toc {
 	font-size: 1.5rem;
 	position: sticky;
-	top: 5rem;
+	top: 7rem;
 	right: 0;
 }
 
@@ -121,41 +127,45 @@ div.toc {
 @media screen and (max-width: 800px) {
 	html, body {
 		margin: 0;
-
-		header .brand {
-			font-size: 1.5rem;
-		}
 	}
-	nav[role="navigation"] a {
+	nav[role="navigation"] ul,
+	nav[role="navigation"] strong {
 		display: none;
 	}
 	nav[role="navigation"] label.menu {
 		display: inline;
 		width: 100%;
-		margin-top: .5rem;
+		margin-top: 0rem;
+		margin-left: 1.5rem;
 	}
-	nav[role="navigation"] label.menu:after {
+	nav[role="navigation"] label.menu:before {
 		position: absolute;
-		right: 1.5rem;
-		top: 1.5rem;
+		left: 0rem;
+		top: 0rem;
 		content: "\2261";
 	}
-	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:after {
+	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:before {
 		content: "\203A";
 	}
-	nav[role="navigation"] input[type=checkbox].menu:checked ~ a {
+	nav[role="navigation"] input[type=checkbox].menu:checked ~ ul,
+	nav[role="navigation"] input[type=checkbox].menu:checked ~ strong {
 		display: block;
 		font-size: 1.5rem;
+		background-color: $bg;
+		color: $text;
 	}
 	.w50, .w60 {
 		width: 90%;
+	}
+	.w20 {
+		width: 40%;
 	}
 	.pal {
 		padding: 1rem;
 	}
 	.content {
 		min-height: 100vh;
-		padding-top: 10rem;
+		padding-top: 7rem;
 
 		&:nth-child(even) {
 			background-color: $bg;
@@ -190,5 +200,11 @@ div.toc {
 				padding: .5em;
 			}
 		}
+	}
+	nav.toc {
+		position: fixed;
+		font-size: 1.5rem;
+		top: 7rem;
+		left: .5rem;
 	}
 }
