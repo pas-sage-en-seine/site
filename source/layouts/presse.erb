@@ -5,19 +5,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "Festival Pas Sage en Seine 2020" %></title>
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <%= stylesheet_link_tag "presse" %>
+    <%= javascript_include_tag "presse" %>
   </head>
+
   <body>
     <%= yield %>
 
     <footer class="pam txtcenter">
       <small>Site conçu avec le moteur de site statique
-        <a href="https://middlemanapp.com/" title="Aller sur la page du projet Middleman">Middleman</a>
-        et le mini-framework CSS <a href="http://knacss.com/" title="Aller sur la page de KNACSS">KNACSS</a>.</small>
+      <a href="https://middlemanapp.com/" title="Aller sur la page du projet Middleman">Middleman</a>
+    et le mini-framework CSS <a href="http://knacss.com/" title="Aller sur la page de KNACSS">KNACSS</a>.</small>
       <br>
       <small>Toute contribution à l’amélioration du site est la bienvenue sur notre page
       <a href="https://github.com/pas-sage-en-seine/site" title="Aller à la page GitHub du site du festival">GitHub</a> !</small>
     </footer>
   </body>
+
 </html>

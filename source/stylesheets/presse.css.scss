@@ -1,0 +1,194 @@
+@import "variables";
+@import "KNACSS";
+@import "fonts";
+
+body {
+	font-family: 'Ubuntu';
+	color: $text;
+	background-color: $bg;
+}
+
+header {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid $bg;
+	position: sticky;
+	top: 0;
+	width: 100%;
+
+	background: $text;
+	color: $bg;
+	font-size: 2rem;
+
+	a {
+		color: $bg;
+		text-decoration: underline dashed;
+		text-decoration-thickness: 1px;
+
+		&:hover, &:focus {
+			color: darken($bg, 20%);
+			text-decoration: underline dashed;
+			text-decoration-thickness: 1px;
+		}
+	}
+
+	div.brand, nav {
+		padding: 1rem;
+	}
+}
+
+footer {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid $bg;
+
+	background-color: $text;
+	color: $bg;
+	a {
+		color: $bg;
+		text-decoration: underline dotted;
+		text-decoration-thickness: 1px;
+
+		&:hover, &:focus {
+			color: darken($bg, 20%);
+			text-decoration: underline dashed;
+			text-decoration-thickness: 1px;
+		}
+	}
+}
+
+/* Navigation */
+nav[role="navigation"] input[type="checkbox"].menu {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+nav[role="navigation"] label.menu {
+	display: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+.content {
+	min-height: 100vh;
+	padding-top: 5rem;
+
+	&:nth-child(even) {
+		background-color: $bg;
+		color: $text;
+		a {
+			color: $text;
+			&:focus, &:hover {
+				color: lighten($text, 20%);
+			}
+		}
+	}
+	p, ul, address, dd, td {
+		color: #111;
+	}
+
+	dl.table-display {
+		display: flex;
+		flex-flow: row wrap;
+		dt
+		{
+			flex-basis: 25%;
+			margin: 0 0 0 0;
+			padding: .5em;
+			font-weight: bold;
+		}
+
+		dd
+		{
+			flex-basis: 75%;
+			flex-grow: 1;
+			width: auto;
+			margin: 0 0 0 0;
+			padding: .5em;
+		}
+	}
+}
+
+div.toc {
+	font-size: 1.5rem;
+	position: sticky;
+	top: 5rem;
+	right: 0;
+}
+
+/* Gestion des mobiles */
+@media screen and (max-width: 800px) {
+	html, body {
+		margin: 0;
+
+		header .brand {
+			font-size: 1.5rem;
+		}
+	}
+	nav[role="navigation"] a {
+		display: none;
+	}
+	nav[role="navigation"] label.menu {
+		display: inline;
+		width: 100%;
+		margin-top: .5rem;
+	}
+	nav[role="navigation"] label.menu:after {
+		position: absolute;
+		right: 1.5rem;
+		top: 1.5rem;
+		content: "\2261";
+	}
+	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:after {
+		content: "\203A";
+	}
+	nav[role="navigation"] input[type=checkbox].menu:checked ~ a {
+		display: block;
+		font-size: 1.5rem;
+	}
+	.w50, .w60 {
+		width: 90%;
+	}
+	.pal {
+		padding: 1rem;
+	}
+	.content {
+		min-height: 100vh;
+		padding-top: 10rem;
+
+		&:nth-child(even) {
+			background-color: $bg;
+			color: $text;
+			a {
+				color: $text;
+				&:focus, &:hover {
+					color: lighten($text, 20%);
+				}
+			}
+			p, ul, address, dd {
+				color: #111;
+			}
+		}
+		dl.table-display {
+			display: flex;
+			flex-flow: row wrap;
+			dt
+			{
+				flex-basis: 30%;
+				margin: 0 0 0 0;
+				padding: .5em;
+				font-weight: bold;
+			}
+
+			dd
+			{
+				flex-basis: 70%;
+				flex-grow: 1;
+				width: auto;
+				margin: 0 0 0 0;
+				padding: .5em;
+			}
+		}
+	}
+}

@@ -37,6 +37,27 @@ header {
 	}
 }
 
+footer {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid $bg;
+
+	background: $text;
+	color: $bg;
+
+	a {
+		color: $bg;
+		text-decoration: underline dotted;
+		text-decoration-thickness: 1px;
+
+		&:hover, &:focus {
+			color: darken($bg, 20%);
+			text-decoration: underline dashed;
+			text-decoration-thickness: 1px;
+		}
+	}
+}
+
 /* Navigation */
 nav[role="navigation"] input[type="checkbox"].menu {
 	position: absolute;
@@ -48,43 +69,6 @@ nav[role="navigation"] label.menu {
 	display: none;
 	cursor: pointer;
 	user-select: none;
-}
-
-@media screen and (max-width: 800px) {
-	html, body {
-		margin: 0;
-
-		header .brand {
-			font-size: 1.5rem;
-		}
-	}
-	nav[role="navigation"] a {
-		display: none;
-	}
-	nav[role="navigation"] label.menu {
-		display: inline;
-		width: 100%;
-		margin-top: .5rem;
-	}
-	nav[role="navigation"] label.menu:after {
-		position: absolute;
-		right: 1.5rem;
-		top: 1.5rem;
-		content: "\2261";
-	}
-	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:after {
-		content: "\203A";
-	}
-	nav[role="navigation"] input[type=checkbox].menu:checked ~ a {
-		display: block;
-		font-size: 1.5rem;
-	}
-	.w50, .w60 {
-		width: 90%;
-	}
-	.pal {
-		padding: 1rem;
-	}
 }
 
 section div.descriptions {
@@ -281,23 +265,6 @@ progress {
 	}
 }
 
-@media screen and (max-width: 800px) {
-	#festival {
-		font-size: inherit;
-	}
-	[data-modal] {
-		border-radius: 2rem;
-		padding: 2rem;
-		padding-top: 4rem;
-	}
-	#contact svg, #sponsors img {
-		max-width: 10rem;
-		max-height: 10rem;
-		padding: 1rem;
-		border-radius: 1rem;
-	}
-}
-
 #needs {
 	.list {
 		display: flex;
@@ -314,7 +281,63 @@ progress {
 	}
 }
 
+div.toc {
+	font-size: 1.5rem;
+	position: sticky;
+	top: 0;
+	right: 0;
+}
+
+/* Gestion des mobiles */
 @media screen and (max-width: 800px) {
+	html, body {
+		margin: 0;
+
+		header .brand {
+			font-size: 1.5rem;
+		}
+	}
+	nav[role="navigation"] a {
+		display: none;
+	}
+	nav[role="navigation"] label.menu {
+		display: inline;
+		width: 100%;
+		margin-top: .5rem;
+	}
+	nav[role="navigation"] label.menu:after {
+		position: absolute;
+		right: 1.5rem;
+		top: 1.5rem;
+		content: "\2261";
+	}
+	nav[role="navigation"] input[type=checkbox].menu:checked ~ label:after {
+		content: "\203A";
+	}
+	nav[role="navigation"] input[type=checkbox].menu:checked ~ a {
+		display: block;
+		font-size: 1.5rem;
+	}
+	.w50, .w60 {
+		width: 90%;
+	}
+	.pal {
+		padding: 1rem;
+	}
+	#festival {
+		font-size: inherit;
+	}
+	[data-modal] {
+		border-radius: 2rem;
+		padding: 2rem;
+		padding-top: 4rem;
+	}
+	#contact svg, #sponsors img {
+		max-width: 10rem;
+		max-height: 10rem;
+		padding: 1rem;
+		border-radius: 1rem;
+	}
 	#needs {
 		.list {
 			display: block;

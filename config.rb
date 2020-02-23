@@ -7,6 +7,7 @@ page 'index.html', layout: :content
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/presse.html*', :layout => 'presse'
 
 configure :development do
   activate :livereload, host: 'localhost', apply_css_live: true, apply_js_live: true, no_swf: true
@@ -22,6 +23,7 @@ end
 activate :deploy do |deploy|
   deploy.deploy_method = :rsync
   deploy.host          = 'rabbit.passageenseine.fr'
+  deploy.user          = root
   deploy.path          = '/var/www/pses'
   deploy.port          = 2222
   deploy.build_before  = true
